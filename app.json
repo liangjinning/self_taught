@@ -1,0 +1,65 @@
+{
+  "pages": [
+    
+    "pages/zhihu/home/home",
+
+    "pages/index/index",
+    "pages/logs/logs",
+    
+    "pages/zhihu/index/index",
+    "pages/zhihu/member/member",
+    "pages/zhihu/find/find",
+    "pages/zhihu/message/message",
+    "pages/zhihu/users/users",
+    "pages/zhihu/searchResult/searchResult",
+    "pages/zhihu/titleDetail/titleDetail",
+    "pages/zhihu/contentDetail/contentDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小知乎",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#999",
+    "selectedColor": "#1E8AE8",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "assets/img/home-light.png",
+        "iconPath": "assets/img/home.png",
+        "pagePath": "pages/zhihu/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "assets/img/market-light.png",
+        "iconPath": "assets/img/market.png",
+        "pagePath": "pages/zhihu/member/member",
+        "text": "会员"
+      },
+      {
+        "selectedIconPath": "assets/img/find-light.png",
+        "iconPath": "assets/img/find.png",
+        "pagePath": "pages/zhihu/find/find",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "assets/img/msg-light.png",
+        "iconPath": "assets/img/msg.png",
+        "pagePath": "pages/zhihu/message/message",
+        "text": "消息"
+      },
+      {
+        "selectedIconPath": "assets/img/more-light.png",
+        "iconPath": "assets/img/more.png",
+        "pagePath": "pages/zhihu/users/users",
+        "text": "更多"
+      }
+    ]
+  }
+}

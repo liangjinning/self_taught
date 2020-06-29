@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+<!-- <view class="haeder">
+  <button class="span" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+  <view wx:else class="userinfo">
+    <image bindtap="bindViewTap" class="userinfourl" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view> -->
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <scroll-view 
+    scroll-x="false" 
+    scroll-y="false" 
+    upper-threshold="50" 
+    lower-threshold="50" 
+    scroll-top="" 
+    scroll-top="" 
+    scroll-into-view="" 
+    bindscrolltoupper="" 
+    bindscrolltolower="" 
+    bindscroll="">
+    <view  class="items" wx:for="{{areay}}" wx:key="index" bindtap="bindViewTap" data-id="{{index}}" >
+      <view>{{ item }} {{ index }}</view>
+      <image  src="/assets/img/right.png" alt=""/>
+    </view>
+  </scroll-view>
+</view>
