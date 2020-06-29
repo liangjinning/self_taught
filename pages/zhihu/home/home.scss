@@ -69,14 +69,22 @@ page{
                     font-weight: 900;
                     height: 48rpx;
                     line-height: 48rpx;
+                    color: #202020;
                 }
                 .item-content {
                     .content-text {
                         .user-info {
                             display: flex;
+                            .user-img {
+                                height: 32rpx;
+                                width: 32rpx;
+                                border-radius: 50%;
+                                border: 1rpx solid #6b6b6b;
+                                margin: 4rpx 8rpx 4rpx 0;
+                            }
                             .user-name {
                                 font-weight: 900;
-                                color: #767676;
+                                color: #6b6b6b;
                                 font-size: 28rpx;
                                 margin-right: 16rpx;
                             }
@@ -98,9 +106,12 @@ page{
                 .item-bottom {
                     display: flex;
                     margin-top: 12rpx;
-                    .bottom-zan, .bottom-comment {
+                    color: #afafaf;
+                    .bottom-zan {
                         margin-right: 12rpx;
-                        color: #afafaf;
+                    }
+                    .bottom-comment {
+                        margin-left: 12rpx;
                     }
                 }
             }

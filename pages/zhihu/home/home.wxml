@@ -23,7 +23,7 @@
           <view class="item-content">
             <view class="content-text">
               <view class="user-info">
-                <image wx:if="{{item.userImg}}" class="user-img" src="{{item.userImg}}" />
+                <image class="user-img" src="{{item.userImg}}" />
                 <view class="user-name">
                   {{item.userName}}
                 </view>
@@ -41,6 +41,7 @@
             <view class="bottom-zan">
               {{item.zan}}赞同
             </view>
+            ·
             <view class="bottom-comment">
               {{item.comment}}评论
             </view>

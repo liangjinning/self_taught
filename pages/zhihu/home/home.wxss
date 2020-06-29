@@ -87,15 +87,24 @@ page {
   font-weight: 900;
   height: 48rpx;
   line-height: 48rpx;
+  color: #202020;
 }
 
 .home-view .main .main-scroll .scroll-item .item-content .content-text .user-info {
   display: flex;
 }
 
+.home-view .main .main-scroll .scroll-item .item-content .content-text .user-info .user-img {
+  height: 32rpx;
+  width: 32rpx;
+  border-radius: 50%;
+  border: 1rpx solid #6b6b6b;
+  margin: 4rpx 8rpx 4rpx 0;
+}
+
 .home-view .main .main-scroll .scroll-item .item-content .content-text .user-info .user-name {
   font-weight: 900;
-  color: #767676;
+  color: #6b6b6b;
   font-size: 28rpx;
   margin-right: 16rpx;
 }
@@ -117,9 +126,13 @@ page {
 .home-view .main .main-scroll .scroll-item .item-bottom {
   display: flex;
   margin-top: 12rpx;
+  color: #afafaf;
 }
 
-.home-view .main .main-scroll .scroll-item .item-bottom .bottom-zan, .home-view .main .main-scroll .scroll-item .item-bottom .bottom-comment {
+.home-view .main .main-scroll .scroll-item .item-bottom .bottom-zan {
   margin-right: 12rpx;
-  color: #afafaf;
+}
+
+.home-view .main .main-scroll .scroll-item .item-bottom .bottom-comment {
+  margin-left: 12rpx;
 }
