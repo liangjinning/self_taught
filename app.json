@@ -5,7 +5,7 @@
 
     "pages/index/index",
     "pages/logs/logs",
-    
+
     "pages/zhihu/index/index",
     "pages/zhihu/member/member",
     "pages/zhihu/find/find",
