@@ -22,23 +22,15 @@ Component({
     ],
     isRotate: false,
     isTitle: '全站',
-    aa:[     //放三个，要自己加上去。
-      {   
-          time:7,
-          nickName:"猪***能",
-          reward:"2"
+    topBot:[{   
+          nickName: "这是第1天消息,巴拉巴拉巴拉巴拉",
       },
       {   
-          time:12,
-          nickName: "画**",
-          reward: "2"
+          nickName: "这是第2天消息,巴拉巴拉巴拉巴拉",
       },
       {
-          time:14,
-          nickName: "wang**",
-          reward: "2"
-      },
-    ],
+          nickName: "这是第3天消息,巴拉巴拉巴拉巴拉",
+      }],
   },
 
   /**

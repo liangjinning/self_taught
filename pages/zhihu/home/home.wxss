@@ -17,7 +17,7 @@ page {
   padding: 0 3%;
   flex: 0 0 100rpx;
   /* 不放大不缩小固定100rpx */
-  border-bottom: 1px solid #d6d5d5;
+  box-shadow: 0px 0px 2rpx 0px rgba(202, 199, 199, 0.993);
 }
 
 .home-view .header .home-souse {

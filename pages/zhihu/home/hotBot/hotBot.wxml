@@ -10,22 +10,25 @@
             <image src="../../../../assets/img/down.png" binderror="" bindload="" />
         </view>
     </view>
-    <view class='notice'>
-        <view class='notice-contain'>
-            <swiper class="tab-right" vertical="true" autoplay="true" circular="true"  interval="2000" display-multiple-items='1'>
-                <view class="right-item">
-                    <block wx:for-index="idx" wx:for='{{aa}}' wx:key="index">
-                        <swiper-item>
-                            <view class='content-item'>
-                                <view class="time">{{item.time}}分钟前</view>
-                                <view class='name'>{{item.nickName}}提现了</view>
-                                <view class='wawa'>{{item.reward}}元</view>
-                            </view>
-                        </swiper-item>
-                    </block> 
-                    
-                </view>
-            </swiper>
+    <scroll-view class='main-scroll' scroll-y>
+        <view class='notice'>
+            <view class='notice-contain'>
+                <swiper class="tab-right" vertical="true" autoplay="true" circular="true"  interval="2000" display-multiple-items='1'>
+                    <view class="right-item">
+                        <block wx:for-index="idx" wx:for='{{topBot}}' wx:key="index">
+                            <swiper-item>
+                                <view class='content-item'>
+                                    <view class="top-title">热议</view>
+                                    <view class='name'>{{item.nickName}}</view>
+                                </view>
+                            </swiper-item>
+                        </block> 
+                    </view>
+                </swiper>
+            </view>
         </view>
-    </view>
+        <view class="top-bot" wx:for="{{title}}" wx:key="index" >
+            {{item}}
+        </view>
+    </scroll-view>
 </view>
