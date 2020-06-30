@@ -38,13 +38,9 @@
             <image wx:if="{{item.contentImg}}" class="content-img" src="{{item.contentImg}}" />
           </view>
           <view class="item-bottom">
-            <view class="bottom-zan">
-              {{item.zan}}赞同
-            </view>
+            <view class="bottom-zan">{{item.zan}}赞同</view>
             ·
-            <view class="bottom-comment">
-              {{item.comment}}评论
-            </view>
+            <view class="bottom-comment">{{item.comment}}评论</view>
           </view>
         </view>
       </view>
