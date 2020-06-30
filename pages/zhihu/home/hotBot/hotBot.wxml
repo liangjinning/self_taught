@@ -1,0 +1,31 @@
+<!--pages/zhihu/home/hotBot/hotBot.wxml-->
+<view class="hot-bot">
+    <view class="title">
+        <scroll-view scroll-x style="width: 100%" class="scroll">  
+            <view class="scroll-item {{ isTitle == item ? 'show-item' : '' }}" wx:for="{{title}}" wx:key="index" data-title="{{item}}" bindtap="setTitle">
+                {{ item }}
+            </view>
+        </scroll-view>
+        <view class="more {{ isRotate ? 'rotate' : '' }}" bindtap="setRotate">
+            <image src="../../../../assets/img/down.png" binderror="" bindload="" />
+        </view>
+    </view>
+    <view class='notice'>
+        <view class='notice-contain'>
+            <swiper class="tab-right" vertical="true" autoplay="true" circular="true"  interval="2000" display-multiple-items='1'>
+                <view class="right-item">
+                    <block wx:for-index="idx" wx:for='{{aa}}' wx:key="index">
+                        <swiper-item>
+                            <view class='content-item'>
+                                <view class="time">{{item.time}}分钟前</view>
+                                <view class='name'>{{item.nickName}}提现了</view>
+                                <view class='wawa'>{{item.reward}}元</view>
+                            </view>
+                        </swiper-item>
+                    </block> 
+                    
+                </view>
+            </swiper>
+        </view>
+    </view>
+</view>

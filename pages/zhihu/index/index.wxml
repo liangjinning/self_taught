@@ -1,17 +1,43 @@
 <!--pages/zhihu/index/index.wxml-->
-<!-- <text>pages/zhihu/index/index.wxml</text> -->
-
 <view class='wraper'>
-  <view class='header'>header</view>
-  <view class='main'>
-    <scroll-view class='main-scroll' scroll-y style="height: 100%">
-      <view class='main-list'>
-        <view class='card' wx:for="{{areay}}" wx:key="index">
-          <view class='card-box'></view>
-          <view>{{items}}</view>
-        </view>
-      </view>
-    </scroll-view>
+  <swiper current="{{isActive}}" class="main" duration="0" bindchange="bindChange">
+    <swiper-item catchtouchmove="stopTouchMove">
+        <import src="../home/home.wxml" />
+        <template is="msgItem"/>
+    </swiper-item>
+    <swiper-item catchtouchmove="stopTouchMove">
+        <view>关注2</view>
+    </swiper-item>
+    <swiper-item catchtouchmove="stopTouchMove">
+        <view>热榜3</view>
+    </swiper-item>
+    <swiper-item catchtouchmove="stopTouchMove">
+        <view>热榜4</view>
+    </swiper-item>
+    <swiper-item catchtouchmove="stopTouchMove">
+        <view>热榜5</view>
+    </swiper-item>
+  </swiper>
+  <view class='footer' >
+    <view class="tab-item {{ isActive == 0 ? 'active-item' : '' }}" data-index="0" bindtap="setActive">
+      <image class="image" src="{{ isActive == 0 ? '../../../assets/img/home-light.png' : '../../../assets/img/home.png' }}" />
+      <view class="text">首页</view>
+    </view>
+    <view class="tab-item {{ isActive == 1 ? 'active-item' : '' }}" data-index="1" bindtap="setActive">
+      <image class="image" src="{{ isActive == 1 ? '../../../assets/img/market-light.png' : '../../../assets/img/market.png' }}" />
+      <view class="text">会员</view>
+    </view>
+    <view class="tab-item {{ isActive == 2 ? 'active-item' : '' }}" data-index="2" bindtap="setActive">
+      <image class="image" src="{{ isActive == 2 ? '../../../assets/img/find-light.png' : '../../../assets/img/find.png' }}" />
+      <view class="text">发现</view>
+    </view>
+    <view class="tab-item {{ isActive == 3 ? 'active-item' : '' }}" data-index="3" bindtap="setActive">
+      <image class="image" src="{{ isActive == 3 ? '../../../assets/img/msg-light.png' : '../../../assets/img/msg.png' }}" />
+      <view class="text">消息</view>
+    </view>
+    <view class="tab-item {{ isActive == 4 ? 'active-item' : '' }}" data-index="4" bindtap="setActive">
+      <image class="image" src="{{ isActive == 4 ? '../../../assets/img/more-light.png' : '../../../assets/img/more.png' }}" />
+      <view class="text">更多</view>
+    </view>
   </view>
-  <view class='footer'>footer</view>
 </view>

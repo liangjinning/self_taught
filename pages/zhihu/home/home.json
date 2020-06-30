@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "attention": "./attention/attention",
+    "recommend": "./recommend/recommend",
+    "hotBot": "./hotBot/hotBot"
+  }
 }

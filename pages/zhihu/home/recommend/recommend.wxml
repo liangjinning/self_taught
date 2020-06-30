@@ -1,0 +1,32 @@
+<!--pages/zhihu/home/recommend/recommend.wxml-->
+<scroll-view class='main-scroll' scroll-y style="height: 100%">
+    <view class="main-list">
+        <view wx:for="{{areay}}" wx:key="index" class="scroll-item">
+        <view class="item-title">
+            {{item.title}}
+        </view>
+        <view class="item-content">
+            <view class="content-text">
+            <view class="user-info">
+                <image class="user-img" src="{{item.userImg}}" />
+                <view class="user-name">
+                {{item.userName}}
+                </view>
+                <view class="user-tip">
+                {{item.userTip}}
+                </view>
+            </view>
+            <view class="content-info">
+                {{item.userInfo}}
+            </view>
+            </view>
+            <image wx:if="{{item.contentImg}}" class="content-img" src="{{item.contentImg}}" />
+        </view>
+        <view class="item-bottom">
+            <view class="bottom-zan">{{item.zan}}赞同</view>
+            <text>·</text>
+            <view class="bottom-comment">{{item.comment}}评论</view>
+        </view>
+        </view>
+    </view> 
+</scroll-view>

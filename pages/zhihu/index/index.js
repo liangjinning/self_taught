@@ -31,7 +31,46 @@ Page({
         name: 'aa',
         content: 'bb'
       },
-    ]
+      {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      }, {
+        name: 'aa',
+        content: 'bb'
+      },
+    ],
+    isActive: 0,
+  },
+
+  setActive: function(e) {
+    var _this = this;
+    if (this.data.isActive != e.currentTarget.dataset.index) {
+      _this.setData( {
+          isActive: e.currentTarget.dataset.index
+      })
+    }
+  },
+
+  stopTouchMove: function(e) {
+    return false;
   },
 
   /**

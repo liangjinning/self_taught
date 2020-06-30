@@ -12,6 +12,7 @@ page{
         background-color: #ffffff;
         padding: 0 3%;
         flex: 0 0 100rpx; /* 不放大不缩小固定100rpx */
+        border-bottom: 1px solid #d6d5d5;
         .home-souse {
             display: flex;
             .add {
@@ -29,11 +30,13 @@ page{
                 padding: 0 8px;
                 border-radius: 8px;
                 width: calc( 94% - 64px );
+                font-size: 28rpx;
             }
         }
         .title-list {
             display: flex;
             margin-top: 12px;
+            font-size: 26rpx;
             .title-item {
                 width: 33%;
                 text-align: center;
@@ -52,70 +55,6 @@ page{
     .main {
         flex: 1;
         position: relative;
-        .main-scroll {
-            width: 100%;
-            position: absolute;
-            .main-list {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            .scroll-item {
-                background-color: #ffffff;
-                margin-top: 12rpx;
-                width: 100%;
-                padding: 18rpx 24rpx;
-                .item-title {
-                    font-weight: 900;
-                    height: 48rpx;
-                    line-height: 48rpx;
-                    color: #202020;
-                }
-                .item-content {
-                    .content-text {
-                        .user-info {
-                            display: flex;
-                            .user-img {
-                                height: 32rpx;
-                                width: 32rpx;
-                                border-radius: 50%;
-                                border: 1rpx solid #6b6b6b;
-                                margin: 4rpx 8rpx 4rpx 0;
-                            }
-                            .user-name {
-                                font-weight: 900;
-                                color: #6b6b6b;
-                                font-size: 28rpx;
-                                margin-right: 16rpx;
-                            }
-                            .user-tip {
-                                color: #afafaf;
-                                font-size: 28rpx;
-                            }
-                        }
-                        .content-info {
-                            display: -webkit-box;
-                            word-break: break-all;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                            -webkit-box-orient: vertical;
-                            -webkit-line-clamp:2;
-                        }
-                    }
-                }
-                .item-bottom {
-                    display: flex;
-                    margin-top: 12rpx;
-                    color: #afafaf;
-                    .bottom-zan {
-                        margin-right: 12rpx;
-                    }
-                    .bottom-comment {
-                        margin-left: 12rpx;
-                    }
-                }
-            }
-        }
     }
     
 }

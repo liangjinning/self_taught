@@ -1,5 +1,4 @@
 <!--pages/zhihu/home/home.wxml-->
-<!-- <text>pages/zhihu/home/home.wxml</text> -->
 <view class="home-view">
   <view class="header">
     <view class="home-souse">
@@ -7,44 +6,21 @@
       <input class="souse-input" placeholder="搜索输入"/>
       <image class="add" src="../../../assets/img/add.png" ></image>
     </view>
-    <view class="title-list">
-      <view class="title-item">关注<view class="tip"/></view>
-      <view class="title-item show-item">推荐<view class="tip"/></view>
-      <view class="title-item">热榜<view class="tip"/></view>
+    <view class="title-list" bindtap="setActive">
+      <view class="title-item {{isActive == 0 ? 'show-item' : '' }}" data-index="0">关注<view class="tip"/></view>
+      <view class="title-item {{isActive == 1 ? 'show-item' : '' }}" data-index="1">推荐<view class="tip"/></view>
+      <view class="title-item {{isActive == 2 ? 'show-item' : '' }}" data-index="2">热榜<view class="tip"/></view>
     </view>
   </view> 
-  <view class="main">
-    <scroll-view class='main-scroll' scroll-y style="height: 100%">
-      <view class="main-list">
-        <view wx:for="{{areay}}" wx:key="index" class="scroll-item">
-          <view class="item-title">
-            {{item.title}}
-          </view>
-          <view class="item-content">
-            <view class="content-text">
-              <view class="user-info">
-                <image class="user-img" src="{{item.userImg}}" />
-                <view class="user-name">
-                  {{item.userName}}
-                </view>
-                <view class="user-tip">
-                  {{item.userTip}}
-                </view>
-              </view>
-              <view class="content-info">
-                 {{item.userInfo}}
-              </view>
-            </view>
-            <image wx:if="{{item.contentImg}}" class="content-img" src="{{item.contentImg}}" />
-          </view>
-          <view class="item-bottom">
-            <view class="bottom-zan">{{item.zan}}赞同</view>
-            ·
-            <view class="bottom-comment">{{item.comment}}评论</view>
-          </view>
-        </view>
-      </view>
-      
-   </scroll-view>
-  </view>
+  <swiper current="{{isActive}}" class="main" duration="300" bindchange="bindChange">
+    <swiper-item >
+        <attention />
+    </swiper-item>
+    <swiper-item>
+        <recommend />
+    </swiper-item>
+    <swiper-item>
+        <hotBot />
+    </swiper-item>
+  </swiper>
 </view>

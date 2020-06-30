@@ -5,25 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    areay: [
-      {'title': '李三的故事会1','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 123},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-      {'title': '李三的故事会','userName': '李三', 'userTip': '超级牛皮的XXXXXX','userInfo': '今天我要给大家讲一个故事，这个故事就是巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉', 'zan': 12, 'comment': 12},
-    ],
+    isActive: 2,
   },
+
+  setActive: function(e) {
+      var _this = this;
+    if (this.data.isActive != e.target.dataset.index) {
+      _this.setData( {
+        isActive: e.target.dataset.index
+    })
+    }
+  },
+
+  bindChange: function(e) {
+    var _this = this;
+    _this.setData( { isActive: e.detail.current });
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

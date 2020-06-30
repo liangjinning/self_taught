@@ -1,11 +1,8 @@
 {
   "pages": [
-    
     "pages/zhihu/home/home",
-
     "pages/index/index",
     "pages/logs/logs",
-
     "pages/zhihu/index/index",
     "pages/zhihu/member/member",
     "pages/zhihu/find/find",
@@ -13,12 +10,15 @@
     "pages/zhihu/users/users",
     "pages/zhihu/searchResult/searchResult",
     "pages/zhihu/titleDetail/titleDetail",
-    "pages/zhihu/contentDetail/contentDetail"
+    "pages/zhihu/contentDetail/contentDetail",
+    "pages/zhihu/home/recommend/recommend",
+    "pages/zhihu/home/attention/attention",
+    "pages/zhihu/home/hotBot/hotBot"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小知乎",
+    "navigationBarTitleText": "小小乎",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
@@ -33,7 +33,7 @@
       {
         "selectedIconPath": "assets/img/home-light.png",
         "iconPath": "assets/img/home.png",
-        "pagePath": "pages/zhihu/index/index",
+        "pagePath": "pages/zhihu/home/home",
         "text": "首页"
       },
       {
