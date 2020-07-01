@@ -27,8 +27,21 @@
                 </swiper>
             </view>
         </view>
-        <view class="top-bot" wx:for="{{title}}" wx:key="index" >
-            {{item}}
+        <view class="top-bot" wx:for="{{topSearch}}" wx:key="index" >
+            <view class="top-tip tip-{{item.top}}">
+                {{item.top}}
+            </view>
+            <view class="top-content">
+                <view class="content-search">
+                    {{item.title}}
+                </view>
+                <view class="content-hot">
+                    {{item.hot}}万热度
+                </view>
+            </view>
+            <view class="image">
+                {{item.img}}
+            </view>
         </view>
     </scroll-view>
 </view>

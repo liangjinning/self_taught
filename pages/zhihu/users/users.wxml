@@ -1,2 +1,17 @@
 <!--pages/zhihu/users/users.wxml-->
-<text>pages/zhihu/users/users.wxml</text>
+<view class="users-content">
+    <view class="top-title">
+        <view class="top-scan" bindtap='getScancode'>
+            <image src="../../../assets/img/scan.png" />
+        </view>
+        <view class="top-seatch">
+            {{result}}
+        </view>
+        <view class="top-setting">
+        
+        </view>
+    </view>
+    <view class="content">
+        
+    </view>
+</view>

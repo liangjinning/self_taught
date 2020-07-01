@@ -5,7 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
+    result: '',
+  },
 
+  getScancode: function(e) {
+    var _this = this;
+    // 允许从相机和相册扫码
+    wx.scanCode({
+      success: (res) => {
+        var result = res.result;
+        console.log(result)
+        _this.setData({
+          result: result,
+        })
+      }
+    })
   },
 
   /**

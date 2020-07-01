@@ -1,0 +1,23 @@
+page{
+    width: 100%;
+    height:100%;
+}
+.users-content {
+    .top-title {
+        display: flex;
+        padding: 0 3%;
+        background-color: #00a3ff;
+        height: 56rpx;
+        .top-scan {
+            margin-top: 4rpx;
+            image {
+                height: 48rpx;
+                width: 48rpx;
+            }
+        }
+    }
+    .content {
+        height: 500rpx;
+        width: 500rpx;
+    }
+}
