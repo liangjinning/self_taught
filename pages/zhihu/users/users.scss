@@ -3,12 +3,31 @@ page{
     height:100%;
 }
 .users-content {
+    height: 100%;
     .top-title {
         display: flex;
         padding: 0 3%;
         background-color: #00a3ff;
-        height: 56rpx;
+        height: 64rpx;
+        z-index: 1;
         .top-scan {
+            margin-top: 4rpx;
+            image {
+                height: 42rpx;
+                width: 42rpx;
+            }
+        }
+        .top-seatch {
+            height: 48rpx;
+            margin: 4rpx 16rpx;
+            background-color: #2090d1;
+            padding: 0 16rpx;
+            border-radius: 8rpx;
+            color: #ffffff;
+            width: calc( 94% - 128rpx );
+            font-size: 24rpx;
+        }
+        .top-setting {
             margin-top: 4rpx;
             image {
                 height: 48rpx;
@@ -17,7 +36,51 @@ page{
         }
     }
     .content {
-        height: 500rpx;
-        width: 500rpx;
+        height: calc(100% - 64rpx );
+        width: 100%;
+        position: relative;
+        image {
+            position: absolute;
+            width: 250%;
+            height: 666rpx;
+            top: -300rpx;
+            left: -77%;
+            z-index: -1;
+
+        }
+        .back {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #ebebeb;
+            z-index: -2;
+        }
+        .content-list {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            .unload {
+                height: 360rpx;
+                width: 90%;
+                margin: 24rpx 5% 0;
+                background-color: #ffffff;
+                border-radius: 24rpx;
+            }
+            .community {
+                height: 180rpx;
+                width: 90%;
+                margin: 24rpx 5% 0;
+                background-color: #ffffff;
+                border-radius: 24rpx;
+            }
+            .my-card {
+                .title {
+
+                }
+                .circle, .video, .subject {
+                    
+                }
+            }
+        }
     }
 }

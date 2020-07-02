@@ -3,11 +3,16 @@ page {
   height: 100%;
 }
 
+.users-content {
+  height: 100%;
+}
+
 .users-content .top-title {
   display: flex;
   padding: 0 3%;
   background-color: #00a3ff;
-  height: 56rpx;
+  height: 64rpx;
+  z-index: 1;
 }
 
 .users-content .top-title .top-scan {
@@ -15,11 +20,71 @@ page {
 }
 
 .users-content .top-title .top-scan image {
+  height: 42rpx;
+  width: 42rpx;
+}
+
+.users-content .top-title .top-seatch {
+  height: 48rpx;
+  margin: 4rpx 16rpx;
+  background-color: #2090d1;
+  padding: 0 16rpx;
+  border-radius: 8rpx;
+  color: #ffffff;
+  width: calc( 94% - 128rpx);
+  font-size: 24rpx;
+}
+
+.users-content .top-title .top-setting {
+  margin-top: 4rpx;
+}
+
+.users-content .top-title .top-setting image {
   height: 48rpx;
   width: 48rpx;
 }
 
 .users-content .content {
-  height: 500rpx;
-  width: 500rpx;
+  height: calc(100% - 64rpx);
+  width: 100%;
+  position: relative;
+}
+
+.users-content .content image {
+  position: absolute;
+  width: 250%;
+  height: 666rpx;
+  top: -300rpx;
+  left: -77%;
+  z-index: -1;
+}
+
+.users-content .content .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ebebeb;
+  z-index: -2;
+}
+
+.users-content .content .content-list {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.users-content .content .content-list .unload {
+  height: 360rpx;
+  width: 90%;
+  margin: 24rpx 5% 0;
+  background-color: #ffffff;
+  border-radius: 24rpx;
+}
+
+.users-content .content .content-list .community {
+  height: 180rpx;
+  width: 90%;
+  margin: 24rpx 5% 0;
+  background-color: #ffffff;
+  border-radius: 24rpx;
 }

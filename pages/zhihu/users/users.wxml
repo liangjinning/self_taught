@@ -4,14 +4,36 @@
         <view class="top-scan" bindtap='getScancode'>
             <image src="../../../assets/img/scan.png" />
         </view>
-        <view class="top-seatch">
-            {{result}}
-        </view>
+        <input class="top-seatch" placeholder-style="color:#BBBBBB" placeholder="搜索输入"/>
         <view class="top-setting">
-        
+            <image src="../../../assets/img/setting.png" />
         </view>
     </view>
     <view class="content">
-        
+        <image src="../../../assets/img/yuan.png" />
+        <view class="back" />
+        <view class="content-list">
+            <view class="unload">
+
+            </view>
+            <view class="community">
+
+            </view>
+            <view class="my-card">
+                <view class="title">
+                    <text>我的卡片</text>
+                    <text>+管理卡片</text>
+                </view>
+                <view class="circle">
+
+                </view>
+                <view class="video">
+
+                </view>
+                <view class="subject">
+                    
+                </view>
+            </view>
+        </view>
     </view>
 </view>

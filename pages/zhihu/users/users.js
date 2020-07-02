@@ -26,7 +26,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 动态设置title背景色
+    wx.setNavigationBarColor({
+      frontColor: '#ffffff', // 必写项
+      backgroundColor: '#00a3ff', // 必写项
+      animation: { // 可选项
+          duration: 400,
+          timingFunc: 'easeIn'
+      }
+  })
   },
 
   /**
