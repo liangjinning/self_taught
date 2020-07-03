@@ -1,0 +1,21 @@
+.card-area {
+    height: 240rpx;
+    margin-top: 24rpx;
+    background-color: #ffffff;
+    .title {
+        width: 90%;
+        padding: 8rpx 5%;
+        display: flex;
+        justify-content: space-between;
+        .more {
+            display: flex;
+            line-height: 48rpx;
+        }
+        image {
+            margin-top: 8rpx;
+            height: 32rpx;
+            width: 32rpx;
+        }
+
+    }
+}

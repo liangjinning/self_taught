@@ -1,0 +1,16 @@
+<!--pages/zhihu/users/card/card.wxml-->
+<view class="card-area">
+    <view class="title">
+        <view><image src="{{titleImg}}" />{{title}}</view>
+        <view class="more">
+            <view>查看更多</view>
+            <image class="image" src="../../../../assets/img/right.png" />
+        </view>
+    </view>
+    <scroll-view scroll-x="{{true}}">
+        <view wx:for="{{cardArray}}" wx:key="index">
+            {{item}}
+        </view>
+    </scroll-view>
+</view>
+

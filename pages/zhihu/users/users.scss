@@ -3,7 +3,8 @@ page{
     height:100%;
 }
 .users-content {
-    height: 100%;
+    height: auto;
+    overflow: hidden;
     .top-title {
         display: flex;
         padding: 0 3%;
@@ -36,10 +37,10 @@ page{
         }
     }
     .content {
-        height: calc(100% - 64rpx );
+        height: auto;
         width: 100%;
         position: relative;
-        image {
+        .back-img {
             position: absolute;
             width: 250%;
             height: 666rpx;
@@ -56,9 +57,9 @@ page{
             z-index: -2;
         }
         .content-list {
-            position: absolute;
             z-index: 1;
             width: 100%;
+            height: auto;
             .unload {
                 height: 360rpx;
                 width: 90%;
@@ -75,10 +76,18 @@ page{
             }
             .my-card {
                 .title {
-
-                }
-                .circle, .video, .subject {
-                    
+                    width: 90%;
+                    margin: 24rpx 5% 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .mine {
+                        font-weight: bold;
+                        font-size: 30rpx;
+                    }
+                    .mine-add {
+                        color: #2090d1;
+                        font-size: 30rpx;
+                    }
                 }
             }
         }

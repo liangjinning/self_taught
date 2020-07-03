@@ -1,5 +1,5 @@
 <!--pages/zhihu/users/users.wxml-->
-<view class="users-content">
+<scroll-view class="users-content" scroll-y>
     <view class="top-title">
         <view class="top-scan" bindtap='getScancode'>
             <image src="../../../assets/img/scan.png" />
@@ -10,7 +10,7 @@
         </view>
     </view>
     <view class="content">
-        <image src="../../../assets/img/yuan.png" />
+        <image class="back-img" src="../../../assets/img/yuan.png" />
         <view class="back" />
         <view class="content-list">
             <view class="unload">
@@ -21,19 +21,14 @@
             </view>
             <view class="my-card">
                 <view class="title">
-                    <text>我的卡片</text>
-                    <text>+管理卡片</text>
+                    <text class="mine">我的卡片</text>
+                    <text class="mine-add">+管理卡片</text>
                 </view>
-                <view class="circle">
-
-                </view>
-                <view class="video">
-
-                </view>
-                <view class="subject">
-                    
-                </view>
+                <card title="你可能感兴趣的圈子" titleImg=""  cardArray="" />
+                <card title="视频" titleImg=""  cardArray="" />
+                <card title="想法" titleImg=""  cardArray="" />
             </view>
         </view>
     </view>
-</view>
+</scroll-view>
+    
