@@ -1,2 +1,18 @@
 <!--pages/zhihu/member/member.wxml-->
-<text>pages/zhihu/member/member.wxml</text>
+<view class="member">
+    <view class="member-top">
+        <view class="upload">
+            <image class="" src="../../../assets/img/user-unlogin.png" />
+            <view class="header">
+                <view class="username">未登录 <view class="mber">开通盐选会员</view></view>
+                <view class="tip">加入盐选会员享各种精彩课程</view>
+            </view>
+            <image class="search" src="../../../assets/img/search.png" />
+        </view>
+        <view class="scroll-list" >
+            <view class="title-item {{isActive == 0 ? 'show-item' : '' }}" data-index="0">关注<view class="tip"/></view>
+            <view class="title-item {{isActive == 1 ? 'show-item' : '' }}" data-index="1">推荐<view class="tip"/></view>
+            <view class="title-item {{isActive == 2 ? 'show-item' : '' }}" data-index="2">热榜<view class="tip"/></view>
+        </view>
+    </view>
+</view>

@@ -2,11 +2,19 @@
     height: 240rpx;
     margin-top: 24rpx;
     background-color: #ffffff;
-    .title {
+    .header {
         width: 90%;
-        padding: 8rpx 5%;
+        padding: 16rpx 5%;
         display: flex;
         justify-content: space-between;
+        font-size: 26rpx;
+        line-height: 32rpx;
+        .title {
+            display: flex;
+            .tip {
+                line-height: 48rpx;
+            }
+        }
         .more {
             display: flex;
             line-height: 48rpx;
@@ -15,7 +23,23 @@
             margin-top: 8rpx;
             height: 32rpx;
             width: 32rpx;
+            margin-right: 8rpx;
         }
-
+    }
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    .scroll {
+        height: calc( 100% - 66rpx );
+        width: auto;
+        overflow:hidden;
+        .square {
+            width: 160rpx;
+            height: 85%;
+            display: inline-block;
+            background-color: #ebebeb;
+            margin-left: 5%;
+            color: #acacac;
+        }
     }
 }

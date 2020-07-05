@@ -1,15 +1,16 @@
 {
   "pages": [
-    "pages/zhihu/users/users",
+    "pages/zhihu/member/member",
     
     "pages/index/index",
     "pages/logs/logs",
 
     "pages/zhihu/home/home",
     "pages/zhihu/index/index",
-    "pages/zhihu/member/member",
+
     "pages/zhihu/find/find",
     "pages/zhihu/message/message",
+    "pages/zhihu/users/users",
     
     "pages/zhihu/searchResult/searchResult",
     "pages/zhihu/titleDetail/titleDetail",

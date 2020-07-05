@@ -14,19 +14,57 @@
         <view class="back" />
         <view class="content-list">
             <view class="unload">
-
+                <view class="unload-tip">登录小小乎，体验更多动能</view>
+                <view class="upload">
+                    <image src="../../../assets/img/qq.png" />
+                    <image src="../../../assets/img/weibo.png" />
+                    <image src="../../../assets/img/wechat.png" />
+                </view>
+                <view class="other-load">
+                    <view class="">其他方式登录</view>
+                    <image src="../../../assets/img/right.png" />
+                </view>
+                <view class="logs">
+                    <view class="tip" >
+                        <view class="number">96</view>
+                        <view class="hint">关注</view>
+                    </view>
+                    <view class="tip" >
+                        <view class="number">0</view>
+                        <view class="hint">收藏夹</view>
+                    </view>
+                    <view class="tip" >
+                        <view class="number">960</view>
+                        <view class="hint">最近浏览</view>
+                    </view>
+                </view>
             </view>
             <view class="community">
-
+                <view class="tip" >
+                    <image src="../../../assets/img/wallet.png" />
+                    <view class="hint">钱包</view>
+                </view>
+                <view class="tip" >
+                    <image src="../../../assets/img/leaf.png" />
+                    <view class="hint">社区建设</view>
+                </view>
+                <view class="tip" >
+                    <image src="../../../assets/img/flag.png" />
+                    <view class="hint">反馈与帮助</view>
+                </view>
+                <view class="tip" >
+                    <image src="../../../assets/img/hammer.png" />
+                    <view class="hint">众裁议事厅</view>
+                </view>
             </view>
             <view class="my-card">
                 <view class="title">
                     <text class="mine">我的卡片</text>
                     <text class="mine-add">+管理卡片</text>
                 </view>
-                <card title="你可能感兴趣的圈子" titleImg=""  cardArray="" />
-                <card title="视频" titleImg=""  cardArray="" />
-                <card title="想法" titleImg=""  cardArray="" />
+                <card title="你可能感兴趣的圈子" titleImg="../../../../assets/img/sel.png" />
+                <card title="视频" titleImg="../../../../assets/img/video.png" />
+                <card title="想法" titleImg="../../../../assets/img/think.png" />
             </view>
         </view>
     </view>

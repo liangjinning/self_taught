@@ -61,11 +61,57 @@ page{
             width: 100%;
             height: auto;
             .unload {
-                height: 360rpx;
+                height: 408rpx;
                 width: 90%;
                 margin: 24rpx 5% 0;
                 background-color: #ffffff;
                 border-radius: 24rpx;
+                text-align: center;
+                .unload-tip {
+                    padding-top: 16rpx;
+                    font-weight: bold;
+                }
+                .upload {
+                    height: 136rpx;
+                    padding-top: 24rpx;
+                    image {
+                        height: 96rpx;
+                        width: 96rpx;
+                        &:not(:first-child){
+                            margin-left: 96rpx;
+                        }
+                    }
+                }
+                .other-load {
+                    margin: 0 auto;
+                    line-height: 32rpx;
+                    font-size: 26rpx;
+                    display: flex;
+                    width: 200rpx;
+                    color: #999999;
+                    image {
+                        height: 32rpx;
+                        width: 32rpx;
+                    }
+                }
+                .logs {
+                    width: 90%;
+                    margin: 24rpx 5%;
+                    border-top: 1rpx solid #d1d1d1;
+                    display: flex;
+                    padding: 16rpx 0;
+                     > view {
+                         width: 33%;
+                         .number {
+                             font-weight: bold;
+                         }
+                         .hint {
+                             font-size: 22rpx;
+                             color: #999999;
+                             font-weight:normal;
+                         }
+                     }
+                }
             }
             .community {
                 height: 180rpx;
@@ -73,6 +119,20 @@ page{
                 margin: 24rpx 5% 0;
                 background-color: #ffffff;
                 border-radius: 24rpx;
+                display: flex;
+                text-align: center;
+                > view {
+                    width: 24%;
+                    margin-top: 48rpx;
+                    image {
+                        height: 64rpx;
+                        width: 64rpx;
+                    }
+                    .hint {
+                        font-size: 24rpx;
+                        color: #7e7e7e;
+                    }
+                }
             }
             .my-card {
                 .title {

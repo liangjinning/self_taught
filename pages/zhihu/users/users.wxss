@@ -75,11 +75,67 @@ page {
 }
 
 .users-content .content .content-list .unload {
-  height: 360rpx;
+  height: 408rpx;
   width: 90%;
   margin: 24rpx 5% 0;
   background-color: #ffffff;
   border-radius: 24rpx;
+  text-align: center;
+}
+
+.users-content .content .content-list .unload .unload-tip {
+  padding-top: 16rpx;
+  font-weight: bold;
+}
+
+.users-content .content .content-list .unload .upload {
+  height: 136rpx;
+  padding-top: 24rpx;
+}
+
+.users-content .content .content-list .unload .upload image {
+  height: 96rpx;
+  width: 96rpx;
+}
+
+.users-content .content .content-list .unload .upload image:not(:first-child) {
+  margin-left: 96rpx;
+}
+
+.users-content .content .content-list .unload .other-load {
+  margin: 0 auto;
+  line-height: 32rpx;
+  font-size: 26rpx;
+  display: flex;
+  width: 200rpx;
+  color: #999999;
+}
+
+.users-content .content .content-list .unload .other-load image {
+  height: 32rpx;
+  width: 32rpx;
+}
+
+.users-content .content .content-list .unload .logs {
+  width: 90%;
+  margin: 24rpx 5%;
+  border-top: 1rpx solid #d1d1d1;
+  display: flex;
+  padding: 16rpx 0;
+}
+
+.users-content .content .content-list .unload .logs > view {
+  width: 33%;
+}
+
+.users-content .content .content-list .unload .logs > view .number {
+  font-weight: bold;
+}
+
+.users-content .content .content-list .unload .logs > view .hint {
+  font-size: 22rpx;
+  color: #999999;
+  font-weight: normal;
 }
 
 .users-content .content .content-list .community {
@@ -88,6 +144,23 @@ page {
   margin: 24rpx 5% 0;
   background-color: #ffffff;
   border-radius: 24rpx;
+  display: flex;
+  text-align: center;
+}
+
+.users-content .content .content-list .community > view {
+  width: 24%;
+  margin-top: 48rpx;
+}
+
+.users-content .content .content-list .community > view image {
+  height: 64rpx;
+  width: 64rpx;
+}
+
+.users-content .content .content-list .community > view .hint {
+  font-size: 24rpx;
+  color: #7e7e7e;
 }
 
 .users-content .content .content-list .my-card .title {

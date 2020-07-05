@@ -2,22 +2,51 @@
   height: 240rpx;
   margin-top: 24rpx;
   background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.card-area .title {
+.card-area .header {
   width: 90%;
-  padding: 8rpx 5%;
+  padding: 16rpx 5%;
   display: flex;
   justify-content: space-between;
+  font-size: 26rpx;
+  line-height: 32rpx;
 }
 
-.card-area .title .more {
+.card-area .header .title {
+  display: flex;
+}
+
+.card-area .header .title .tip {
+  line-height: 48rpx;
+}
+
+.card-area .header .more {
   display: flex;
   line-height: 48rpx;
 }
 
-.card-area .title image {
+.card-area .header image {
   margin-top: 8rpx;
   height: 32rpx;
   width: 32rpx;
+  margin-right: 8rpx;
+}
+
+.card-area .scroll {
+  height: calc( 100% - 66rpx);
+  width: auto;
+  overflow: hidden;
+}
+
+.card-area .scroll .square {
+  width: 160rpx;
+  height: 85%;
+  display: inline-block;
+  background-color: #ebebeb;
+  margin-left: 5%;
+  color: #acacac;
 }
