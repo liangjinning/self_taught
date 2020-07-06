@@ -9,10 +9,15 @@
             </view>
             <image class="search" src="../../../assets/img/search.png" />
         </view>
-        <view class="scroll-list" >
-            <view class="title-item {{isActive == 0 ? 'show-item' : '' }}" data-index="0">关注<view class="tip"/></view>
-            <view class="title-item {{isActive == 1 ? 'show-item' : '' }}" data-index="1">推荐<view class="tip"/></view>
-            <view class="title-item {{isActive == 2 ? 'show-item' : '' }}" data-index="2">热榜<view class="tip"/></view>
-        </view>
+        <scroll-view scroll-x style="width: 100%" class="scroll">  
+            <view class="scroll-item {{ isTitle == item ? 'show-item' : '' }}" wx:for="{{title}}" wx:key="index" data-title="{{item}}" bindtap="setTitle">
+                {{ item }}
+            </view>
+        </scroll-view>
+    </view>
+    <view class="member-list">
+        <scroll-view class='main-scroll' scroll-y style="height: 100%">
+            
+        </scroll-view>
     </view>
 </view>
